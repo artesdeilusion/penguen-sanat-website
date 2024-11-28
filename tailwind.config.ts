@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
   content: [
@@ -8,6 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        noto: ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
+        raleway: ['"Raleway"', ...defaultTheme.fontFamily.sans]
+
+      }
+      ,
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

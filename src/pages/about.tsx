@@ -35,9 +35,9 @@ function About() {
                             </div>
 
                         </h1>
-                        <p className="mt-6 mb-4 text-lg sm:mb-8">
+                        <p className=" font-noto mt-6 mb-4 text-lg sm:mb-8">
                             Sanatın Gücüyle İlham Veren,
-                            <br className="hidden md:inline lg:hidden" />Yaratıcılıkla Geleceği Şekillendiren Bir Topluluk
+                            <br className="hidden md:inline lg:hidden" /> Yaratıcılıkla Geleceği Şekillendiren Bir Topluluk
                         </p>
                         <div className="flex flex-row  sm:items-center sm:justify-center sm:flex-row space-x-4">
                             <a rel="noopener noreferrer" target='_blank' href="http://register.penguensanat.com/" className="btn bg-orange-500 text-white border-none hover:bg-orange-600">Kayıt Ol</a>
@@ -86,7 +86,7 @@ function About() {
             <section className="py-12">
                 <div className="container mx-auto px-6 lg:px-20">
                     <h2 className="text-4xl  text-center mb-6">Biz kimiz?</h2>
-                    <p className="text-lg text-center max-w-4xl mx-auto">
+                    <p className=" font-noto text-lg text-center max-w-4xl mx-auto">
                         Penguen Sanat olarak, sanatın, müziğin ve eğitimin dönüştürücü gücüne inanıyoruz. Toplumun kalbinde yer alan merkezimizde, yaratıcılığı teşvik etmeyi, becerileri geliştirmeyi ve her yaştan insanın tutkularını beslemeyi misyon edindik. İster bir enstrüman çalmayı öğrenmek, ister resim yapma sanatında ustalaşmak, isterse robotik ve kodlama dünyasını keşfetmek olsun, hayal gücünün fırsatlarla buluştuğu bir ortam sunuyoruz.
 
 
@@ -101,7 +101,7 @@ function About() {
                         {/* Vision */}
                         <div>
                             <h3 className="text-3xl  mb-4">Vizyonumuz</h3>
-                            <p className="text-lg">
+                            <p className="font-noto text-lg">
                                 Bireylerin potansiyellerini keşfetmelerine ve yaratıcılık ile yenilikçilik sayesinde anlamlı bir fark yaratmalarına olanak tanıyan lider bir kurum olmak.
 
                             </p>
@@ -109,7 +109,7 @@ function About() {
                         {/* Mission */}
                         <div>
                             <h3 className="text-3xl  mb-4">Misyonumuz</h3>
-                            <p className="text-lg">
+                            <p className="font-noto text-lg">
                                 Merak uyandıran, yaratıcılığı teşvik eden ve öğrencileri dinamik bir dünyada başarılı olmaları için gerekli becerilerle donatan destekleyici ve kapsayıcı bir öğrenme ortamı yaratmayı hedefliyoruz.
 
 
@@ -137,7 +137,7 @@ function About() {
                             <a
                                 key={index}
                                 href={course.link}
-                                className="group rounded-3xl p-4 transition-all duration-300 transform group- hover:scale-105 shadow-lg bg-white overflow-hidden text-center flex flex-col items-center hover:shadow-2xl hover:bg-gray-50"
+                                className="group rounded-3xl p-2 transition-all duration-300 transform group- hover:scale-105 shadow-lg bg-white overflow-hidden text-center flex flex-col items-center hover:shadow-2xl hover:bg-gray-50"
                             >
                                 <div className="overflow-hidden">
                                     <img
@@ -147,7 +147,7 @@ function About() {
                                     />
                                 </div>
                                 <div className="mt-4 text-black">
-                                    <p className="text-gray-600 text-sm">{course.description}</p>
+                                    <p className="font-noto text-gray-600 text-sm">{course.description}</p>
                                 </div>
                             </a>
                         ))}
@@ -180,7 +180,7 @@ function About() {
                         ].map((reason, index) => (
                             <div key={index} className="p-10 rounded-3xl shadow-md bg-white">
                                 <h4 className="text-xl  mb-2">{reason.title}</h4>
-                                <p className="text-gray-600">{reason.description}</p>
+                                <p className="font-noto text-gray-600">{reason.description}</p>
                             </div>
                         ))}
                     </div>
@@ -328,7 +328,7 @@ function About() {
                             Hemen Aramıza Katıl!
                         </h2>
 
-                        <p className="hidden text-gray-500 md:mt-4 md:block">
+                        <p className="hidden font-noto text-gray-500 md:mt-4 md:block">
                             Sanat dolu bir dünyaya adım atın. Etkinliklerden haberdar olun, özel fırsatlara erişin ve yeteneklerinizi geliştirmek için ilk adımı atın!
                         </p>
 

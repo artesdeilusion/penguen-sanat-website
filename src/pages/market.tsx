@@ -62,7 +62,7 @@ function Market() {
                 <div className="mx-auto mt-28 max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <header>
                         <h2 className="text-4xl text-gray-900">Penguen Store</h2>
-                        <p className="mt-4 max-w-md text-gray-500">
+                        <p className="mt-4 font-noto max-w-md text-gray-500">
                             Sanatseverler için özenle seçilmiş enstrüman koleksiyonumuzla hizmetinizdeyiz.
                         </p>
                         <p className='pt-2 text-gray-400 text-xs'>

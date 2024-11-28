@@ -40,7 +40,7 @@ export default function Home() {
                             Yolculuk
                         </h1>
 
-                        <p className="mt-4 sm:text-xl/relaxed">
+                        <p className="mt-4 font-noto sm:text-xl/relaxed">
                             Yaratıcılığınızı keşfedin ve müzik, drama ve sanatın büyüleyici dünyasına adım atın. Penguen Sanat Merkezi’nde her an, sanatsal hayallerinize bir adım daha yakın!
                         </p>
 
@@ -71,9 +71,9 @@ export default function Home() {
                         onClick={() => setShowModal(false)}>
                         &times;
                     </button>
-                    <div className="relative">
+                    <div className="relative ">
                         <iframe
-                            width="878"
+                            width="500"
                             height="494"
                             src="https://www.youtube.com/embed/sJYO3hurbvU"
                             title="Penguen Sanat Merkezi Tanıtım Videosu | Antalya&#39;da Sanatın Kalbi"
@@ -81,7 +81,7 @@ export default function Home() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
-                            className="rounded-lg">
+                            className="rounded-2xl">
                         </iframe>
                     </div>
                 </div>
@@ -114,7 +114,7 @@ export default function Home() {
                                     Biz kimiz?
                                 </h2>
 
-                                <p className="mt-4 text-gray-600">
+                                <p className="mt-4 font-noto text-gray-600">
                                     2015 yılında kurulan sanat merkezimiz, müzik eğitimi, tiyatro ve sanat etkinlikleri alanlarında uzman kadrosuyla hizmet vermektedir. Sanatı sevdirmek, yetenekleri keşfetmek ve geliştirmek için çeşitli eğitim programları sunuyoruz. Hem çocuklara hem de yetişkinlere yönelik kurslarımızla sanatı yaşamın bir parçası haline getirmeyi amaçlıyoruz.
                                 </p>
 
@@ -143,7 +143,7 @@ export default function Home() {
                             <a
                                 key={index}
                                 href={course.link}
-                                className="group rounded-3xl p-4 transition-all duration-300 transform group- hover:scale-105 shadow-lg bg-white overflow-hidden text-center flex flex-col items-center hover:shadow-2xl hover:bg-gray-50"
+                                className="group rounded-3xl p-2 transition-all duration-300 transform group- hover:scale-105 shadow-lg bg-white overflow-hidden text-center flex flex-col items-center hover:shadow-2xl hover:bg-gray-50"
                             >
                                 <div className="overflow-hidden">
                                     <img
@@ -153,7 +153,7 @@ export default function Home() {
                                     />
                                 </div>
                                 <div className="mt-4 text-black">
-                                    <p className="text-gray-600 text-sm">{course.description}</p>
+                                    <p className="text-gray-600 font-noto  text-sm">{course.description}</p>
                                 </div>
                             </a>
                         ))}
@@ -168,7 +168,7 @@ export default function Home() {
                             <div className="mx-auto max-w-md text-center lg:text-left">
                                 <header>
                                     <h2 className="text-xl  text-gray-900 sm:text-3xl">Penguen Store</h2>
-                                    <p className="mt-4 text-gray-500">
+                                    <p className="mt-4 font-noto text-gray-500">
                                         Sanatseverler için özenle seçilmiş enstrüman koleksiyonumuzla hizmetinizdeyiz. Gitar, keman ve daha fazlası için mağazamıza göz atabilirsiniz.
                                     </p>
                                 </header>
@@ -216,7 +216,7 @@ export default function Home() {
                     <header className="text-center">
                         <h2 className="text-xl  text-gray-900 sm:text-3xl">Öne Çıkanlar</h2>
 
-                        <p className="mx-auto mt-4 max-w-md text-gray-500">
+                        <p className="mx-auto  font-noto mt-4 max-w-md text-gray-500">
                             Sanat dolu anılarımızı keşfedin! Daha önce gerçekleştirdiğimiz etkinliklerden ilham alın ve bu unutulmaz anların bir parçası olun.     </p>
                     </header>
 
@@ -282,7 +282,7 @@ export default function Home() {
                             Hemen Aramıza Katıl!
                         </h2>
 
-                        <p className="hidden text-gray-500 md:mt-4 md:block">
+                        <p className="hidden font-noto text-gray-500 md:mt-4 md:block">
                             Sanat dolu bir dünyaya adım atın. Etkinliklerden haberdar olun, özel fırsatlara erişin ve yeteneklerinizi geliştirmek için ilk adımı atın!
                         </p>
 

@@ -1,4 +1,4 @@
- import Head from "next/head";
+import Head from "next/head";
 
 export default function MusicCourses() {
     return (
@@ -10,7 +10,7 @@ export default function MusicCourses() {
                 <div className="hero-overlay bg-[#A8E6CF]"></div>
                 <div className="hero-content flex flex-col text-center text-black relative z-10">
                     <img src="/course-cards/4.png" className="h-80 w-auto" alt="Music Courses" />
-                    <p className="mt-2 max-w-screen-md text-xl">
+                    <p className="mt-2 font-noto max-w-screen-md text-xl">
                         Müziğin büyülü dünyasına adım atın! Gitar, keman, piyano, bateri ve daha fazlasını öğrenmek için uzman eğitmenlerimizle çalışın. Güzel Sanatlar ve Konservatuvar hazırlık eğitimleri de burada!
                     </p>
                 </div>
@@ -20,7 +20,7 @@ export default function MusicCourses() {
             <section className="py-12 text-black px-6 lg:px-12 bg-white">
                 <div className="container mx-auto">
                     <h2 className="text-4xl text-center mb-6">Müzik Kurslarımız</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                         {[
                             { name: "Gitar Kursu", image: "/instruments/guitar.png", desc: "Gitar çalmayı en temelden öğrenin." },
                             { name: "Keman Kursu", image: "/instruments/violin.png", desc: "Kemanla klasik müziğin inceliklerini keşfedin." },
@@ -31,7 +31,7 @@ export default function MusicCourses() {
                             <div key={idx} className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                                 <img src={course.image} alt={course.name} className="h-40 mx-auto mb-4" />
                                 <h3 className="text-2xl mb-2">{course.name}</h3>
-                                <p className="text-gray-600">{course.desc}</p>
+                                <p className=" font-noto text-gray-600">{course.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -44,20 +44,20 @@ export default function MusicCourses() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="p-6 shadow-lg rounded-2xl bg-white text-center">
                             <h3 className="text-2xl   mb-3">Uzman Eğitmenler</h3>
-                            <p>Alanında uzman eğitmenlerimizle birebir eğitim alın.</p>
+                            <p className="font-noto">Alanında uzman eğitmenlerimizle birebir eğitim alın.</p>
                         </div>
                         <div className="p-6 shadow-lg rounded-2xl bg-white text-center">
                             <h3 className="text-2xl   mb-3">Kapsamlı İçerikler</h3>
-                            <p>Tüm seviyelere uygun kurs içerikleri.</p>
+                            <p className="font-noto">Tüm seviyelere uygun kurs içerikleri.</p>
                         </div>
                         <div className="p-6 shadow-lg rounded-2xl bg-white text-center">
                             <h3 className="text-2xl   mb-3">Performans Geliştirme</h3>
-                            <p>Güzel Sanatlar ve Konservatuvar sınavlarına tam destek.</p>
+                            <p className="font-noto">Güzel Sanatlar ve Konservatuvar sınavlarına tam destek.</p>
                         </div>
                         {/* New Box for Special Programs */}
                         <div className="p-6 shadow-lg rounded-2xl bg-white text-center">
                             <h3 className="text-2xl   mb-3">Kaliteli Eğitimler</h3>
-                            <p>BİLSEM, Güzel Sanatlar gibi yetenek sınavları ve konservatuvar hazırlığı için özel dersler ve rehberlik hizmeti veriyoruz.</p>
+                            <p className="font-noto">BİLSEM, Güzel Sanatlar gibi yetenek sınavları ve konservatuvar hazırlığı için özel dersler ve rehberlik hizmeti veriyoruz.</p>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ export default function MusicCourses() {
             <section className="py-12 bg-white text-black">
                 <div className="container mx-auto px-6 lg:px-12 text-center">
                     <h2 className="text-4xl mb-6">Ders Notları</h2>
-                    <p className="text-lg mb-8">
+                    <p className="text-lg font-noto mb-8">
                         Kurslarımızdaki önemli noktaları tekrar etmek için aşağıdaki ders notlarına göz atabilirsiniz.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -162,7 +162,7 @@ export default function MusicCourses() {
             {/* Call to Action Section */}
             <section className="py-12 bg-[#388E3C] text-white text-center">
                 <h2 className="text-4xl mb-4">Müzik Tutkunuza İlk Adımı Atın!</h2>
-                <p className="text-lg mb-6">
+                <p className="text-lg font-noto mb-6">
                     Kurslarımızla yeteneklerinizi geliştirin, müzikle hayatınızı güzelleştirin.
                 </p>
                 <a href="http://register.penguensanat.com/" target="_blank" className="px-6 py-3 bg-white text-[#388E3C] font-semibold rounded-lg shadow-lg hover:bg-gray-200">

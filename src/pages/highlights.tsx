@@ -68,7 +68,7 @@ function Highlights() {
             <section className="p-4 lg:p-8 mt-20  bg-gray-100  text-gray-800">
                 <header className="text-center pt-10">
                     <h2 className="  text-gray-900 text-4xl">Öne Çıkanlar</h2>
-                    <p className="mx-auto mt-4 max-w-md text-gray-500">
+                    <p className="mx-auto mt-4 max-w-md font-noto text-gray-500">
                         Sanat dolu anılarımızı keşfedin! Daha önce gerçekleştirdiğimiz etkinliklerden ilham alın ve bu unutulmaz anların bir parçası olun.
                     </p>
                 </header>
@@ -96,7 +96,7 @@ function Highlights() {
                                         project.title
                                     )}
                                 </h3>
-                                <p className="my-6 dark:text-gray-600">{project.description}</p>
+                                <p className="my-6 font-noto dark:text-gray-600">{project.description}</p>
                             </div>
                         </div>
                     ))}

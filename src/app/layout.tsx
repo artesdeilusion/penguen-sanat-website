@@ -11,7 +11,7 @@ const RootLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
 
 
-    <div className='bg-white light' >
+    <div className='bg-white light font-raleway' >
       <nav>
         <Navbar></Navbar>
       </nav>

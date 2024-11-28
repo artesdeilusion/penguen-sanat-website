@@ -14,7 +14,7 @@ export default function DramaCourse() {
                 <div className="hero-overlay bg-[#FFB74D]"></div>
                 <div className="hero-content flex flex-col text-center text-black relative z-10">
                     <img src="/course-cards/1.png" className="h-80 w-auto" alt="Drama Course" />
-                    <p className="mt-2 max-w-screen-md text-xl">
+                    <p className="mt-2 max-w-screen-md font-noto text-xl">
                         Sahne sanatlarının büyülü dünyasına adım at! Profesyonel eğitmenlerimizle
                         oyunculuk, doğaçlama ve sahne becerilerini geliştir. Eğlenceli bir ortamda
                         yeteneklerini keşfet ve özgüven kazan!
@@ -29,19 +29,19 @@ export default function DramaCourse() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                             <h3 className="text-2xl mb-2">Temel Sahne Becerileri</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Tiyatroda temel kuralları öğrenin, sahne duruşu ve ses kullanımını keşfedin.
                             </p>
                         </div>
                         <div className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                             <h3 className="text-2xl mb-2">Doğaçlama Teknikleri</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Sahne üzerinde anında yaratıcı çözümler ve doğaçlama yöntemleri geliştirin.
                             </p>
                         </div>
                         <div className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                             <h3 className="text-2xl mb-2">Karakter Geliştirme</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Farklı karakterlere bürünme tekniklerini öğrenerek oyunculuk becerilerinizi
                                 ileri taşıyın.
                             </p>
@@ -54,14 +54,14 @@ export default function DramaCourse() {
             <section className="m-4 md:m-8 dark:bg-gray-100 dark:text-gray-800">
                 <div className="container mx-auto p-4 my-6 space-y-2 text-center">
                     <h2 className="text-4xl">Sahneye Çık!</h2>
-                    <p className="dark:text-gray-600">Tiyatronun büyüsünü yaşayın ve yeteneklerinizi sergileyin.</p>
+                    <p className="font-noto  text-gray-600">Tiyatronun büyüsünü yaşayın ve yeteneklerinizi sergileyin.</p>
                 </div>
                 <div className="container    text-center mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="  text-[#E65100] inline-block rounded-full  border-[#E65100] border-4   flex-col items-center p-10">
 
                         <AccountBalance className="w-12 h-12 "></AccountBalance>
                         <h3 className="my-3 text-2xl font-semibold">Temeller</h3>
-                        <div className="space-y-1 leading-tight">
+                        <div className="space-y-1 font-noto leading-tight">
                             <p>Tiyatro ve drama kuralları.</p>
                             <p>Sahneye uyum sağlamanın püf noktaları.</p>
                             <p>Sahne korkusunu yenme teknikleri.</p>                        </div>
@@ -69,7 +69,7 @@ export default function DramaCourse() {
                     <div className="  text-white inline-block rounded-full bg-[#E65100] border-[#E65100] border-4   flex-col items-center p-10">
                         <Theaters className="w-12 h-12  "></Theaters>
                         <h3 className="my-3 text-2xl font-semibold">Doğaçlama</h3>
-                        <div className="space-y-1 leading-tight">
+                        <div className="space-y-1 font-noto leading-tight">
                             <p>Anında yaratıcı çözümler bulma.</p>
                             <p>Sahne enerjisini kullanma teknikleri.</p>
                         </div>
@@ -77,7 +77,7 @@ export default function DramaCourse() {
                     <div className="  text-[#E65100] inline-block rounded-full  border-[#E65100] border-4   flex-col items-center p-10">
                         <TheaterComedy className="w-12 h-12  "></TheaterComedy>
                         <h3 className="my-3 text-2xl font-semibold">Karakter Geliştirme</h3>
-                        <div className="space-y-1 leading-tight">
+                        <div className="space-y-1 font-noto leading-tight">
                             <p>Farklı karakterlere bürünme teknikleri.</p>
                             <p>Oyunculuk becerilerinin geliştirilmesi.</p>                        </div>
                     </div>
@@ -133,7 +133,7 @@ export default function DramaCourse() {
             {/* Call to Action Section */}
             <section className="py-12 text-white bg-[#E65100] text-center">
                 <h2 className="text-4xl mb-4">Şimdi Kayıt Ol!</h2>
-                <p className="text-lg mb-6">Kendi hikayenizi sahneye taşıyın ve tiyatro dünyasına adım atın.</p>
+                <p className="text-lg font-noto mb-6">Kendi hikayenizi sahneye taşıyın ve tiyatro dünyasına adım atın.</p>
                 <a href="http://register.penguensanat.com/" target="_blank" className="px-6 py-3 bg-white text-[#E65100] font-semibold rounded-lg shadow-lg hover:bg-gray-200">
                     Kayıt Ol
                 </a>

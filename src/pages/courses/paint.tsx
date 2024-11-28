@@ -11,7 +11,7 @@ export default function PaintCourse() {
                 <div className="hero-overlay bg-[#FFF9C4]"></div>
                 <div className="hero-content flex flex-col text-center text-black [#FBC02D] relative z-10">
                     <img src="/course-cards/5.png" className="h-80 w-auto" alt="Paint Course" />
-                    <p className="mt-2 max-w-screen-md text-xl">
+                    <p className="mt-2 font-noto max-w-screen-md text-xl">
                         Hayal gücünüzü renklere dökün! Profesyonel eğitmenlerimizle yağlı boya, suluboya ve karakalem gibi farklı teknikleri keşfedin. Kendi sanat eserlerinizi yaratma keyfini yaşayın!
                     </p>
                 </div>
@@ -24,19 +24,19 @@ export default function PaintCourse() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="p-10 shadow-xl rounded-3xl bg-gray-100 text-center">
                             <h3 className="text-2xl mb-2">Temel Çizim Teknikleri</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Çizim tekniklerini öğrenerek perspektif, ışık ve gölge kullanımı konusunda uzmanlaşın.
                             </p>
                         </div>
                         <div className="p-10 shadow-xl rounded-3xl bg-gray-100 text-center">
                             <h3 className="text-2xl mb-2">Renk Karıştırma</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Farklı boya türlerini keşfedin ve renk karıştırma teknikleriyle eşsiz tonlar yaratın.
                             </p>
                         </div>
                         <div className="p-10 shadow-xl rounded-3xl bg-gray-100 text-center">
                             <h3 className="text-2xl mb-2">Sanat Kompozisyonu</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Kompozisyonun temel kurallarını öğrenerek sanat eserlerinize estetik bir dokunuş katın.
                             </p>
                         </div>
@@ -71,7 +71,7 @@ export default function PaintCourse() {
             {/* Call to Action Section */}
             <section className="py-12 text-white bg-[#FBC02D] text-center">
                 <h2 className="text-4xl mb-4">Şimdi Kayıt Ol!</h2>
-                <p className="text-lg mb-6">Hayal gücünüzü keşfedin ve benzersiz sanat eserleri yaratın.</p>
+                <p className="text-lg font-noto mb-6">Hayal gücünüzü keşfedin ve benzersiz sanat eserleri yaratın.</p>
                 <a href="http://register.penguensanat.com/" target="_blank" className="px-6 py-3 bg-white text-[#FBC02D] font-semibold rounded-lg shadow-lg hover:bg-gray-200">
                     Kayıt Ol
                 </a>

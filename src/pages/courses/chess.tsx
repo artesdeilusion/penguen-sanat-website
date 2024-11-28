@@ -12,10 +12,11 @@ export default function ChessCourse() {
             <div
                 className="hero pt-20  h-screen relative"
             >
+
                 <div className="hero-overlay bg-[#E1BEE7]     "></div>
                 <div className="hero-content flex flex-col   text-center text-black relative z-10">
                     <img src="/course-cards/3.png" className="h-80 w-auto " alt="" />
-                    <p className="mt-2 max-w-screen-md text-xl">
+                    <p className="mt-2 font-noto max-w-screen-md text-xl">
                         Profesyonel eğitmenlerimizle satranç sanatında ustalaş. Eğlenceli ve ilgi çekici bir ortamda stratejileri, taktikleri ve eleştirel düşünmeyi öğren!
                     </p>
                 </div>
@@ -27,19 +28,19 @@ export default function ChessCourse() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                             <h3 className="  text-2xl mb-2">Satranç Temelleri</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Satranç kurallarını, temel hamleleri ve başlamanız için gereken temel taktikleri öğrenin.
                             </p>
                         </div>
                         <div className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                             <h3 className="  text-2xl mb-2">Orta Düzey Stratejiler</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Açılışlardan sona oyunlara kadar stratejik oyunları derinlemesine keşfedin.
                             </p>
                         </div>
                         <div className="p-6 shadow-xl rounded-2xl bg-gray-100 text-center">
                             <h3 className="  text-2xl mb-2">İleri Düzey Taktikler</h3>
-                            <p className="text-gray-600">
+                            <p className="font-noto text-gray-600">
                                 Karmaşık stratejileri ustaca uygulamayı ve eleştirel düşünmeyi öğrenin.
                             </p>
                         </div>
@@ -57,14 +58,14 @@ export default function ChessCourse() {
 
                         <AccountBalance className="w-12 h-12 "></AccountBalance>
                         <h3 className="my-3 text-2xl font-semibold">Temel</h3>
-                        <div className="space-y-1 leading-tight">
+                        <div className="space-y-1 font-noto leading-tight">
                             <p>Satranç oyununun temel kuralları.</p>
                         </div>
                     </div>
                     <div className="  text-white inline-block rounded-full bg-[#7B1FA2] border-[#7B1FA2] border-4   flex-col items-center p-10">
                         <OutlinedFlag className="w-12 h-12  "></OutlinedFlag>
                         <h3 className="my-3 text-2xl font-semibold">Strateji</h3>
-                        <div className="space-y-1 leading-tight">
+                        <div className="space-y-1 font-noto leading-tight">
                             <p>Başlangıçtan son oyun stratejilerine kadar gelişim.</p>
 
                         </div>
@@ -72,7 +73,7 @@ export default function ChessCourse() {
                     <div className="  text-[#7B1FA2] inline-block rounded-full  border-[#7B1FA2] border-4   flex-col items-center p-10">
                         <Radar className="w-12 h-12  "></Radar>
                         <h3 className="my-3 text-2xl font-semibold">Taktikler</h3>
-                        <div className="space-y-1 leading-tight">
+                        <div className="space-y-1 font-noto leading-tight">
                             <p>Rakiplerinizi alt etmek için ileri düzey hamleler.</p>
                         </div>
                     </div>
@@ -108,7 +109,7 @@ export default function ChessCourse() {
             {/* Call to Action Section */}
             <section className="py-12 text-white[#E1BEE7]   bg-[#7B1FA2]   text-center">
                 <h2 className="text-4xl   mb-4">Şimdi Kayıt Ol!</h2>
-                <p className="text-lg mb-6">
+                <p className="font-noto text-lg mb-6">
                     Satranç kursumuza katıl ve satranç ustası olma serüvenini başlat!
                 </p>
                 <a href="http://register.penguensanat.com/" target="_blank" className="px-6 py-3 bg-white text-[#7B1FA2] font-semibold rounded-lg shadow-lg hover:bg-gray-200">

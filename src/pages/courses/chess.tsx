@@ -1,4 +1,4 @@
-import { MoreHoriz, Radar } from "@mui/icons-material";
+import { Radar } from "@mui/icons-material";
 import AccountBalance from "@mui/icons-material/AccountBalance";
 import OutlinedFlag from "@mui/icons-material/OutlinedFlag";
 import Head from "next/head";

@@ -1,5 +1,4 @@
-import { BuildTwoTone } from "@mui/icons-material";
-import Head from "next/head";
+ import Head from "next/head";
 
 export default function MusicCourses() {
     return (

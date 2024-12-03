@@ -10,6 +10,29 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <RootLayout>
 
             <Head>
+            <title>Penguen Sanat | Sanat ve Eğitimde Yeni Bir Bakış</title>
+        <meta 
+          name="description" 
+          content="Penguen Sanat, sanat ve eğitim alanında yenilikçi yaklaşımlar sunarak öğrencilerin yeteneklerini geliştirmelerine yardımcı olur." 
+        />
+        <meta name="keywords" content="Penguen Sanat, sanat eğitimi, tiyatro, drama, müzik, resim, satranç, robotik" />
+        <meta name="author" content="Penguen Sanat" />
+        <meta property="og:title" content="Penguen Sanat | Sanat ve Eğitimde Yeni Bir Bakış" />
+        <meta 
+          property="og:description" 
+          content="Sanat ve eğitim alanında fark yaratan Penguen Sanat ile öğrenciler yeteneklerini keşfetsin." 
+        />
+        <meta property="og:image" content="/penguensanateskilogo.png" />
+        <meta property="og:url" content="https://penguensanat.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="/penguensanatmerkezi.png" />
+        <meta name="twitter:title" content="Penguen Sanat | Sanat ve Eğitimde Yeni Bir Bakış" />
+        <meta 
+          name="twitter:description" 
+          content="Penguen Sanat, sanat ve eğitim alanında yenilikçi yaklaşımlar sunarak öğrencilerin yeteneklerini geliştirmelerine yardımcı olur." 
+        />
+        <meta name="twitter:image" content="/penguensanateskilogo.png" />
+        <link rel="icon" href="/favicon_package/favicon.ico" />
                 <link rel="apple-touch-icon" sizes="57x57" href="/favicon_package/apple-icon-57x57.png" />
                 <link rel="apple-touch-icon" sizes="60x60" href="/favicon_package/apple-icon-60x60.png" />
                 <link rel="apple-touch-icon" sizes="72x72" href="/favicon_package/apple-icon-72x72.png" />

@@ -45,7 +45,7 @@ export default function Home() {
           alt={image.alt}
           className="object-cover w-full h-64 sm:h-[450px] rounded-xl"
         />
-        <p className="absolute bottom-0 bg-black bg-opacity-50 text-white text-sm py-2 px-4 rounded-b-lg">
+        <p className="absolute bottom-0 bg-black bg-opacity-50 text-white text-sm py-2 px-4 rounded-r -lg">
           {image.alt}
         </p>
       </div>

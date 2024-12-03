@@ -85,7 +85,7 @@ function Workshop() {
 
                 {/* Call-to-Action Section */}
                 <div className="mt-12 py-10 text-center">
-                    <h3 className="text-3xl font-bold text-gray-900">Penguen Sanat'ta Yerinizi Ayırtın!</h3>
+                    <h3 className="text-3xl font-bold text-gray-900">Penguen Sanat&apos;ta Yerinizi Ayırtın!</h3>
                     <p className="mt-4 text-gray-600">
                         Etkinlik tarihlerini ve kayıt formlarını yakından takip edin!
                     </p>
@@ -95,7 +95,7 @@ function Workshop() {
                         rel="noopener noreferrer"
                         className="mt-6 inline-block px-6 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-orange-600"
                     >
-                        Instagram'dan Takip Edin
+                        Instagram&apos;dan Takip Edin
                     </a>
                 </div>
             </section>

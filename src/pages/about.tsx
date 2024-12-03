@@ -1,4 +1,4 @@
-import { Star, StarRounded } from '@mui/icons-material';
+import {   StarRounded } from '@mui/icons-material';
 import Head from 'next/head';
 import React from 'react';
 

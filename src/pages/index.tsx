@@ -38,7 +38,7 @@ export default function Home() {
         className="rounded-lg shadow-lg"
       >
         {images.map((image) => (
-        <Link href={image.link}> <div key={image.id} className="relative">
+        <Link href={image.link}> <div   className="relative">
          
             <img
               src={image.src}

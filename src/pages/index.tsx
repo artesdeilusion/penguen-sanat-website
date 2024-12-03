@@ -12,8 +12,8 @@ export default function Home() {
     {link:"/courses/robotics", id: 1, src: '/courses/1.png', alt: 'Robotik ve Drama' },
     {link:"/courses/drama", id: 2, src: '/courses/2.png', alt: 'Tiyatro ve Drama' },
     {link:"/courses/chess", id: 3,src: '/courses/3.png',alt: 'Satranç' }, 
-    {link:"/courses/paint", id: 3,src: '/courses/4.png',alt: 'Resim' },
-    {link:"/courses/music", id: 3,src: '/courses/5.png',alt: 'Müzik' },
+    {link:"/courses/paint", id: 4,src: '/courses/4.png',alt: 'Resim' },
+    {link:"/courses/music", id: 5,src: '/courses/5.png',alt: 'Müzik' },
 
   ];
 
@@ -29,29 +29,30 @@ export default function Home() {
 
  
     <div className="max-w-4xl px-4  mx-auto">
-      <Carousel
-        showThumbs={false}
-        infiniteLoop={true}
-        autoPlay={true}
-        interval={2000}
-        showStatus={false}
-        className="rounded-lg shadow-lg"
-      >
-        {images.map((image) => (
-        <Link href={image.link}> <div   className="relative">
-         
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="object-cover w-full h-64 sm:h-[450px] rounded-xl"
-            />
-        
-            <p className="absolute bottom-0 bg-black bg-opacity-50 text-white text-sm py-2 px-4 rounded-b-lg">
-              {image.alt}
-            </p>
-          </div></Link>
-        ))}
-      </Carousel>
+    <Carousel
+  showThumbs={false}
+  infiniteLoop={true}
+  autoPlay={true}
+  interval={2000}
+  showStatus={false}
+  className="rounded-lg shadow-lg"
+>
+  {images.map((image) => (
+    <Link href={image.link} key={image.id}>
+      <div className="relative">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="object-cover w-full h-64 sm:h-[450px] rounded-xl"
+        />
+        <p className="absolute bottom-0 bg-black bg-opacity-50 text-white text-sm py-2 px-4 rounded-b-lg">
+          {image.alt}
+        </p>
+      </div>
+    </Link>
+  ))}
+</Carousel>
+
     </div>
 
 

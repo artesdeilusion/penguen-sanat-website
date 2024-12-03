@@ -13,9 +13,10 @@
     "@emotion/styled": "^11.13.5",
     "@mui/icons-material": "^6.1.9",
     "material-icons": "^1.13.12",
-    "next": "15.0.3",
+    "next": "^15.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/node": "^20",

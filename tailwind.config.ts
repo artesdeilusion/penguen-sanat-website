@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        noto: ['"Noto Serif"', ...defaultTheme.fontFamily.serif],
+        noto: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
         raleway: ['"Raleway"', ...defaultTheme.fontFamily.sans]
 
       }

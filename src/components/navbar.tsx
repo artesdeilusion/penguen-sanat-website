@@ -81,12 +81,15 @@ export default function Navbar() {
                                     </ul>
                                 </li>
                                 <li><Link href="/highlights" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Öne Çıkanlar</Link></li>
+                           
                                 <li><Link href="/market" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Mağaza</Link></li>
+                                <li><Link href="/workshop" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Atölyeler</Link></li>
+
                             </ul>
                         )}
                     </div>
                     <Link href="/" className="btn btn-ghost text-xl text-gray-700 hover:text-gray-900">
-                        <img src="/penguensanat.png" alt="Penguen Sanat Logo" className="h-6" />
+                        <img src="/penguensanateskilogo.png" alt="Penguen Sanat Logo" className="h-10" />
                     </Link>
                 </div>
 
@@ -107,6 +110,8 @@ export default function Navbar() {
                         </li>
                         <li><Link href="/highlights" className="text-gray-600 hover:text-gray-800">Öne Çıkanlar</Link></li>
                         <li><Link href="/market" className="text-gray-600 hover:text-gray-800">Mağaza</Link></li>
+                        <li><Link href="/workshop" className="text-gray-600 hover:text-gray-800">Atölyeler</Link></li>
+
                     </ul>
                 </div>
 

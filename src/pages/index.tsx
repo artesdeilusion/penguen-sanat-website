@@ -2,44 +2,69 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Home() {
     const [showModal, setShowModal] = useState(false);
 
+                const images = [
+    {link:"/courses/robotics", id: 1, src: '/courses/1.png', alt: 'Robotik ve Drama' },
+    {link:"/courses/drama", id: 2, src: '/courses/2.png', alt: 'Tiyatro ve Drama' },
+    {link:"/courses/chess", id: 3,src: '/courses/3.png',alt: 'Satranç' }, 
+    {link:"/courses/paint", id: 3,src: '/courses/4.png',alt: 'Resim' },
+    {link:"/courses/music", id: 3,src: '/courses/5.png',alt: 'Müzik' },
+
+  ];
+
     return (
         <div>
 
-            <section className="pt-36 relative  ">
+            <section className="sm:pt-36 pt-32 relative  ">
                 <Head>
                     <title>Penguen Sanat</title>
                 </Head>
 
-                {/* Top Right Pattern */}
-                <div className="absolute top-0 right-0 z-0">
-                    <img
-                        src="/patterns/top-right-pattern.svg"
-                        alt="Top Right Pattern"
-                        className="w-80 h-80 md:w-64 md:h-64"
-                    />
-                </div>
 
-                {/* Bottom Left Pattern */}
-                <div className="absolute  bottom-0 left-0 z-0">
-                    <img
-                        src="/patterns/bottom-left-pattern.svg"
-                        alt="Bottom Left Pattern"
-                        className="w-80 h-80 md:w-64 md:h-64"
-                    />
-                </div>
 
-                <div className="relative mx-auto max-w-screen-xl px-4 pt-32 pb-10 lg:flex lg:h-screen lg:items-center">
+ 
+    <div className="max-w-4xl px-4  mx-auto">
+      <Carousel
+        showThumbs={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        interval={2000}
+        showStatus={false}
+        className="rounded-lg shadow-lg"
+      >
+        {images.map((image) => (
+        <Link href={image.link}> <div key={image.id} className="relative">
+         
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="object-cover w-full h-64 sm:h-[450px] rounded-xl"
+            />
+        
+            <p className="absolute bottom-0 bg-black bg-opacity-50 text-white text-sm py-2 px-4 rounded-b-lg">
+              {image.alt}
+            </p>
+          </div></Link>
+        ))}
+      </Carousel>
+    </div>
+
+
+                
+ 
+                <div className="relative mx-auto max-w-screen-xl px-4 pt-10 pb-10 lg:flex   lg:items-center">
+                    
                     <div className="mx-auto max-w-xl text-black text-center">
                         <h1 className="text-5xl">
                             Antalya’da <br />
                             <strong className="font-extrabold text-orange-500 sm:block"> Sanatın Kalbine </strong>
                             Yolculuk
                         </h1>
-
                         <p className="mt-4 font-noto sm:text-xl/relaxed">
                             Yaratıcılığınızı keşfedin ve müzik, drama ve sanatın büyüleyici dünyasına adım atın. Penguen Sanat Merkezi’nde her an, sanatsal hayallerinize bir adım daha yakın!
                         </p>
@@ -52,13 +77,7 @@ export default function Home() {
                                 Tanıtımı İzle
                             </button>
                         </div>
-                        <div className="mt-8 md:col-span-3">
-                            <img
-                                src="penguensanatmerkezi.png"
-                                className="rounded-xl"
-                                alt=""
-                            />
-                        </div>
+                      
                     </div>
                 </div>
             </section>
@@ -87,9 +106,7 @@ export default function Home() {
                 </div>
             )}
 
-
-            );
-
+ 
 
             <section>
                 <div className="mx-auto max-w-screen-2xl text-black px-4 py-16 sm:px-6 lg:px-8">
@@ -114,13 +131,13 @@ export default function Home() {
                                     Biz kimiz?
                                 </h2>
 
-                                <p className="mt-4 font-noto text-gray-600">
+                                <p className="mt-4 font-noto text-lg text-gray-600">
                                     2015 yılında kurulan sanat merkezimiz, müzik eğitimi, tiyatro ve sanat etkinlikleri alanlarında uzman kadrosuyla hizmet vermektedir. Sanatı sevdirmek, yetenekleri keşfetmek ve geliştirmek için çeşitli eğitim programları sunuyoruz. Hem çocuklara hem de yetişkinlere yönelik kurslarımızla sanatı yaşamın bir parçası haline getirmeyi amaçlıyoruz.
                                 </p>
 
                                 <Link
                                     href="/about"
-                                    className="mt-4 btn bg-orange-500 text-white border-none hover:bg-orange-600"
+                                    className="mt-8 btn bg-orange-500 text-white border-none hover:bg-orange-600"
                                 >
                                     Daha fazla
                                 </Link>
@@ -129,38 +146,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="pt-6 max-w-5xl m-auto pb-20">
-                <div className="container mx-auto px-6">
-                    <h2 className="text-3xl   sm:text-4xl text-black text-center mb-6">Kurslarımız</h2>
-                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
-                        {[
-                            { name: "Dreama", description: "Melodi ve armoni sanatını öğrenerek yaratıcılığınızı geliştirin.", link: "/courses/drama", image: "course-cards/1.png" },
-                            { name: "Robotics", description: "Teknolojiyi keşfedin ve robotik alanında uzmanlaşarak geleceği inşa edin.", link: "/courses/robotics", image: "course-cards/2.png" },
-                            { name: "Chess", description: "Strateji geliştirin, analitik düşünme yeteneğinizi artırın ve satranç ustası olun.", link: "/courses/chess", image: "course-cards/3.png" },
-                            { name: "Music", description: "Müzik aletlerini keşfedin ve yaratıcılığınızı notalarla ifade edin.", link: "/courses/music", image: "course-cards/4.png" },
-                            { name: "Resim", description: "Renkler ile yaratıcılığınızı serbest bırakın ve eşsiz eserler yaratın.", link: "/courses/paint", image: "course-cards/5.png" }
-                        ].map((course, index) => (
-                            <a
-                                key={index}
-                                href={course.link}
-                                className="group rounded-3xl p-2 transition-all duration-300 transform group- hover:scale-105 shadow-lg bg-white overflow-hidden text-center flex flex-col items-center hover:shadow-2xl hover:bg-gray-50"
-                            >
-                                <div className="overflow-hidden">
-                                    <img
-                                        src={course.image}
-                                        alt={course.name}
-                                        className="w-full"
-                                    />
-                                </div>
-                                <div className="mt-4 text-black">
-                                    <p className="text-gray-600 font-noto  text-sm">{course.description}</p>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
+        
             <section className="bg-orange-400">
                 <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:items-stretch">

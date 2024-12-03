@@ -18,6 +18,7 @@ function Footer() {
                     <Link href="/about" className="link link-hover">Hakkında</Link>
                     <Link href="/highlights" className="link link-hover">Öne Çıkanlar</Link>
                     <Link href="/market" className="link link-hover">Mağaza</Link>
+                    <Link href="/workshop" className="link link-hover">Atölyeler</Link>
 
                 </nav>
                 <nav>
@@ -38,7 +39,7 @@ function Footer() {
             </footer>
             <footer className="footer border border-t px-10 py-4">
                 <aside className="flex items-center justify-between w-full">
-                    <img src="/penguensanateskilogo.png" alt="Penguen Sanat Logo" className="h-10 w-auto pr-4" />
+                    <img src="/penguensanat.png" alt="Penguen Sanat Logo" className="h-6 w-auto pr-4" />
                     <a href="https://www.artesdeilusion.com/" target="_blank" className="w-8 h-8 bg-black  hover:animate-spin"></a> {/* Black square at the end */}
                 </aside>
             </footer>

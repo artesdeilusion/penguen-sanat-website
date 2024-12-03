@@ -1,3 +1,4 @@
+import { Star, StarRounded } from '@mui/icons-material';
 import Head from 'next/head';
 import React from 'react';
 
@@ -7,35 +8,33 @@ function About() {
             <Head>
                 <title>Penguen Sanat | Hakkımızda</title>
             </Head>
+  {/* Top Right Pattern */}
+  <div className="absolute top-0 right-0 z-0">
+                    <img
+                        src="/patterns/top-right-pattern.svg"
+                        alt="Top Right Pattern"
+                        className="w-80 h-80 md:w-64 md:h-64"
+                    />
+                </div>
+
+                {/* Bottom Left Pattern */}
+                <div className="absolute  bottom-0 left-0 z-0">
+                    <img
+                        src="/patterns/bottom-left-pattern.svg"
+                        alt="Bottom Left Pattern"
+                        className="w-80 h-80 md:w-64 md:h-64"
+                    />
+                </div>
 
             {/* Hero Section */}
-            <section className="  text-gray-800">
+            <section className="    text-gray-800">
                 <div className="container flex flex-col items-center justify-center p-6 mx-auto sm:pt-12 lg:pt-24">
                     <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                        <img src="ps-tabela.png" alt="" className="rounded-xl object-cover h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                        <img src="ps-tabela.png" alt="" className="z-[1]  rounded-xl object-cover h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                     </div>
-                    <div className="flex flex-col items-center justify-center p-6 text-center lg:max-w-md xl:max-w-lg">
-                        <h1 className="text-4xl leading-none sm:text-5xl">
-                            <div className="text-center space-y-1">
-                                <div className="text-left">
-                                    <span className="ml-5">Satranç</span>
-                                </div>
-                                <div className="text-right">
-                                    <span className=" text-green-500">Müzik</span>
-                                </div>
-                                <div className="text-left">
-                                    <span className="text-purple-500">Resim</span>
-                                </div>
-                                <div className="text-right">
-                                    <span className="ml-40 text-orange-500">Tiyatro</span>
-                                </div>
-                                <div className="text-left">
-                                    <span className="ml-5 text-blue-500">Robotik</span>
-                                </div>
-                            </div>
-
-                        </h1>
-                        <p className=" font-noto mt-6 mb-4 text-lg sm:mb-8">
+                    <div className="flex flex-col z-[1] items-center justify-center p-6 text-center lg:max-w-md xl:max-w-lg">
+ 
+                        <p className=" font-noto   mb-4 text-lg  ">
                             Sanatın Gücüyle İlham Veren,
                             <br className="hidden md:inline lg:hidden" /> Yaratıcılıkla Geleceği Şekillendiren Bir Topluluk
                         </p>
@@ -126,7 +125,7 @@ function About() {
             <section className="pt-6 max-w-5xl m-auto pb-20">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl   sm:text-4xl text-black text-center mb-6">Kurslarımız</h2>
-                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-6">
                         {[
                             { name: "Dreama", description: "Melodi ve armoni sanatını öğrenerek yaratıcılığınızı geliştirin.", link: "/courses/drama", image: "course-cards/1.png" },
                             { name: "Robotics", description: "Teknolojiyi keşfedin ve robotik alanında uzmanlaşarak geleceği inşa edin.", link: "/courses/robotics", image: "course-cards/2.png" },
@@ -155,38 +154,8 @@ function About() {
                 </div>
             </section>
 
-            {/* Why Choose Us Section */}
-            <section className="py-12 bg-indigo-50">
-                <div className="container mx-auto px-6 lg:px-2 text-center">
-                    <h2 className="text-4xl   mb-6">Neden Penguen Sanat?</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {[
-                            {
-                                title: "Uzman Eğitmenler",
-                                description: "Alanında deneyimli profesyonellerden eğitim alın."
-                            },
-                            {
-                                title: "Yaratıcı Ortam",
-                                description: "Destekleyici bir atmosferde potansiyelinizi açığa çıkarın."
-                            },
-                            {
-                                title: "Modern Ekipmanlar",
-                                description: "En son teknolojiye sahip kaynaklarla öğrenmenin keyfini çıkarın."
-                            },
-                            {
-                                title: "Topluma Katkı",
-                                description: "İlham verici bir topluluğun parçası olun ve fark yaratın."
-                            }
-                        ].map((reason, index) => (
-                            <div key={index} className="p-10 rounded-3xl shadow-md bg-white">
-                                <h4 className="text-xl  mb-2">{reason.title}</h4>
-                                <p className="font-noto text-gray-600">{reason.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-            <section className="py-12  ">
+            
+            <section className="py-12 bg-orange-50 ">
                 <div className="container mx-auto px-6 lg:px-2 text-center">
                     <h2 className="text-4xl mb-6">Sanat Okulumuz</h2>
                 </div>
@@ -321,6 +290,287 @@ function About() {
                     </div>
                 </div>
             </section >
+             {/* Why Choose Us Section */}
+             <section className="py-12  ">
+                <div className="container mx-auto px-6 lg:px-2 text-center">
+                    <h2 className="text-4xl   mb-6">Neden Penguen Sanat?</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[
+                            {
+                                title: "Uzman Eğitmenler",
+                                description: "Alanında deneyimli profesyonellerden eğitim alın."
+                            },
+                            {
+                                title: "Yaratıcı Ortam",
+                                description: "Destekleyici bir atmosferde potansiyelinizi açığa çıkarın."
+                            },
+                            {
+                                title: "Modern Ekipmanlar",
+                                description: "En son teknolojiye sahip kaynaklarla öğrenmenin keyfini çıkarın."
+                            },
+                            {
+                                title: "Topluma Katkı",
+                                description: "Her yaştan bireylere verdiğimiz eğitimler ile topluma fayda sağlayın."
+                            }
+                        ].map((reason, index) => (
+                            <div key={index} className="p-10 bg-orange-100 rounded-3xl shadow-lg bg-white">
+                                <h4 className="text-xl  mb-2">{reason.title}</h4>
+                                <p className="font-noto text-gray-600">{reason.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div> 
+            </section>
+            <section className="bg-white">
+  <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <h2 className="text-center text-4xl   tracking-tight text-gray-900  ">
+      Okulumuzun Google Yorumları
+    </h2>
+
+    <div className="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
+      <div className="mb-8 sm:break-inside-avoid">
+        <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+          <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-green-500 text-white object-cover"
+            >C</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Canan İ.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+            Bora öğretmenimiz başta olmak üzere bütün öğretmenlere teşekkür ediyorum. Kızımın profesyonel aynı zamanda kaliteli bir eğitim aldığını ve kaliteli vakit geçirdiğini düşünüyorum. Kesinlikle gözünüz kapalı tercih edeceğiniz bir kurum.
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+        <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-red-500 text-white object-cover"
+            >B</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Batuhan P.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+            Çocuklarınızı güvenle emanet edebileceğiniz bir yer. Bora hocama ilgisinden dolayı teşekkür ederiz.
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-gray-500 text-white object-cover"
+            >S</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Serpil A.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Çok profesyonel çok donanımlı kaliteli eğitmenler kısa sürede çok yol katettik kesinlikle tavsiye ediyorum başarılarınız daim olsun penguen sanat ailesi
+
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-green-500 text-white object-cover"
+            >U</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Serpil A.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Yasim 38 baglama ogrenme hevesim vardi bora hoca sayesinde hem sevwrek hem.kolayca ogrendim icimde bir asik Veysel varmis bora bey sayesinde bunu ortaya cikardim hersey icin teşekkürler hocam
+
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-green-500 text-white object-cover"
+            >U</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Ufuk D.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Yaşım 38 baglama öğrenme hevesim vardı, Bora hoca sayesinde hem sevwrek hem.kolayca ogrendim icimde bir asik Veysel varmis bora bey sayesinde bunu ortaya cikardim hersey icin teşekkürler hocam
+
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-orange-500 text-white object-cover"
+            >H</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Havva Ş.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Oğlumun, Akademi sınavına hazırlık için tanıştık Penguen Sanat Merkezi ile.
+Çok kısıtlı zamanda Bora beyin uzman yaklaşımı ve eğitimi ile başarı sağladık.
+Teşekkürler
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-pink-500 text-white object-cover"
+            >G</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Gürsel G.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Yaşım 30 Saz öğrenme hevesim vardı Bora hocam sayesinde bu hevesimi gerçekleştirdim. Güler yüzlü insanlara nasıl yaklaşmasını bilen tecrübeli bir insan çok teşekkür ediyorum. Emeğine sağlık
+
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-red-300 text-white object-cover"
+            >N</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Nurdan K.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Oğlum piyano eğitimi için başladık çok memnun kaldık Bora Hoca muzik eğitiminin yani sıra çocuklarla cok iyi bir iletişim kurmakta.
+
+          </p>
+        </blockquote>
+      </div>
+
+      <div className="mb-8 sm:break-inside-avoid">
+      <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+        <div className="flex items-center gap-4">
+            <div className="size-14 text-center justify-center items-center flex text-2xl rounded-full bg-blue-500 text-white object-cover"
+            >A</div> 
+
+            <div>
+              <div className="flex justify-center gap-0.5 text-orange-500">
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+              <StarRounded></StarRounded>
+
+              </div>
+
+              <p className="mt-0.5 text-lg font-medium text-gray-900">Ali M.</p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-gray-700">
+          Kaliteli enstrümanlar ve kaliteli eğitimin verildiği yer Bora hocama çok teşekkürler bu süreçte destek olduğu için
+          </p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
             <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 sm:items-center">
                 <div className="p-8 md:p-12 lg:px-16 lg:py-24">
                     <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">

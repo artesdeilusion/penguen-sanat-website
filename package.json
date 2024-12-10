@@ -12,6 +12,7 @@
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@mui/icons-material": "^6.1.9",
+    "framer-motion": "^11.13.5",
     "material-icons": "^1.13.12",
     "next": "^15.0.3",
     "react": "^18.2.0",

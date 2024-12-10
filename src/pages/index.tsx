@@ -1,4 +1,5 @@
 
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
@@ -19,6 +20,20 @@ export default function Home() {
 
     return (
         <div>
+  <motion.div
+        className="absolute inset-0 bg-no-repeat bg-center pointer-events-none"
+        style={{
+          backgroundImage: "url('/bg.svg')", // SVG dosyanızın yolu
+          opacity: 0.5,
+        }}
+        initial={{ y: 0 }}
+        animate={{ y: -50 }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+      />
 
             <section className="sm:pt-36 pt-32 relative  ">
                 <Head>

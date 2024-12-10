@@ -4,12 +4,12 @@ import RootLayout from '@/app/layout';
 import { AppProps } from 'next/app';
 import '@/app/globals.css'
 import Head from 'next/head';
-
+import FlareCursor from "@/components/FlareCursor"; // Don't forget to update this path to your own component file.
+ 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     return (
         <RootLayout>
-
-            <Head>
+             <Head>
             <title>Penguen Sanat | Sanat ve Eğitimde Yeni Bir Bakış</title>
         <meta 
           name="description" 
@@ -51,6 +51,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
                 <meta name="msapplication-TileImage" content="/favicon_package/ms-icon-144x144.png" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
+            <FlareCursor/>
+
             <Component {...pageProps} />
         </RootLayout>
     );

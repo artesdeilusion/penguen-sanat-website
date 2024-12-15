@@ -19,7 +19,7 @@ const RootLayout: React.FC<LayoutProps> = ({ children }) => {
       </footer>
       
       {/* WhatsApp Icon Fixed in Bottom-Right Corner */}
-      <div className="fixed shadow-xl  bg-green-500  text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition bottom-4 right-4">
+      <div className="fixed shadow-xl  bg-green-500  text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition bottom-4 left-4">
         <a
           href="https://api.whatsapp.com/send/?phone=905348418664&text&type=phone_number&app_absent=0"
           target="_blank"

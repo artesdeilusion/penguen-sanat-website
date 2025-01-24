@@ -77,7 +77,10 @@ export default function Navbar() {
                                         <li><Link href="/courses/chess" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Satranç</Link></li>
                                         <li><Link href="/courses/paint" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Resim</Link></li>
                                         <li><Link href="/courses/drama" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Tiyatro ve Drama</Link></li>
+                                      
                                         <li><Link href="/courses/robotics" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Robotik Kodlama</Link></li>
+                                        <li><Link href="/courses/notes" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Ders Notları</Link></li>
+
                                     </ul>
                                 </li>
                                 <li><Link href="/highlights" onClick={closeDropdown} className="text-gray-600 hover:text-gray-800">Öne Çıkanlar</Link></li>
@@ -104,7 +107,10 @@ export default function Navbar() {
                                     <li><Link href="/courses/chess" className="text-gray-600 hover:text-gray-800" onClick={handleLinkClick}>Satranç</Link></li>
                                     <li><Link href="/courses/paint" className="text-gray-600 hover:text-gray-800" onClick={handleLinkClick}>Resim</Link></li>
                                     <li><Link href="/courses/drama" className="text-gray-600 hover:text-gray-800" onClick={handleLinkClick}>Tiyatro ve Drama</Link></li>
+                                  
                                     <li><Link href="/courses/robotics" className="text-gray-600 hover:text-gray-800" onClick={handleLinkClick}>Robotik Kodlama</Link></li>
+                                    <li><Link href="/courses/notes" className="text-gray-600 hover:text-gray-800" onClick={handleLinkClick}>Ders Notları</Link></li>
+
                                 </ul>
                             </details>
                         </li>

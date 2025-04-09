@@ -17,7 +17,7 @@ function Workshop() {
             description: "Kurslarımızdaki önemli noktaları tekrar etmek için aşağıdaki ders notlarına göz atabilirsiniz.",
             image: "https://images.pexels.com/photos/1246437/pexels-photo-1246437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             category: "Müzik",
-            link: "https://drive.google.com/drive/folders/1dfE9Y0Ot7RCBmOtpGStNXVFHc4wTI6lH"
+            link: "https://drive.google.com/drive/folders/1tMNrc-MOudAHlWeBk4Kvck9lwL7yUI4L"
         },
         
     ];
